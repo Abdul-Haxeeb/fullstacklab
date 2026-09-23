@@ -1,0 +1,689 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #f3f5f7;
+    color: #101820;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    height: 78px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f3f5f7;
+    border-bottom: 1px solid #d9dee3;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.logo span,
+.footer-logo span {
+    color: #1769ff;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    font-size: 14px;
+    color: #59636d;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1769ff;
+}
+
+.github-button {
+    padding: 10px 18px;
+    border: 1px solid #101820;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.github-button:hover {
+    background: #101820;
+    color: white;
+}
+
+.hero {
+    min-height: 650px;
+    padding: 90px 7%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: center;
+    background: #f3f5f7;
+}
+
+.small-label,
+.section-heading > span,
+.contact-label {
+    color: #1769ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 0.98;
+    margin: 22px 0;
+    letter-spacing: -4px;
+}
+
+.hero h1 span {
+    color: #1769ff;
+}
+
+.hero-text > p {
+    max-width: 570px;
+    color: #606b75;
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 13px 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: #1769ff;
+    color: white;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    border: 1px solid #c8ced4;
+}
+
+.secondary-button:hover {
+    border-color: #1769ff;
+    color: #1769ff;
+}
+
+.quick-info {
+    display: flex;
+    gap: 45px;
+    margin-top: 50px;
+}
+
+.quick-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-info strong {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+}
+
+.quick-info span {
+    color: #737d86;
+    font-size: 12px;
+}
+
+.profile-card {
+    min-height: 450px;
+    padding: 28px;
+    background: #101820;
+    color: white;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 18px 18px 0 #1769ff;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    color: #89949e;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+.avatar {
+    width: 105px;
+    height: 105px;
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #59636d;
+    border-radius: 50%;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-card h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 32px;
+    margin-top: 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-card > p {
+    color: #a9b2ba;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+}
+
+.student-number {
+    margin-top: 35px;
+    padding-top: 18px;
+    border-top: 1px solid #303a42;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.student-number span,
+.card-details span {
+    color: #77838d;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.student-number strong {
+    color: #5f99ff;
+}
+
+.card-details {
+    display: flex;
+    gap: 55px;
+    margin-top: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.card-details div {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-details strong {
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.card-shape {
+    position: absolute;
+    border: 1px solid #26343f;
+    border-radius: 50%;
+}
+
+.shape-one {
+    width: 260px;
+    height: 260px;
+    right: -90px;
+    top: 100px;
+}
+
+.shape-two {
+    width: 180px;
+    height: 180px;
+    right: -30px;
+    bottom: -80px;
+}
+
+.intro-strip {
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    background: #1769ff;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.section {
+    padding: 110px 7%;
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 90px;
+    border-bottom: 1px solid #d9dee3;
+}
+
+.section-heading h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 1;
+    margin-top: 15px;
+    letter-spacing: -2px;
+}
+
+.section-heading h2 em {
+    color: #1769ff;
+    font-style: normal;
+}
+
+.about-content {
+    max-width: 650px;
+}
+
+.about-content p {
+    color: #66717b;
+    margin-bottom: 22px;
+}
+
+.about-content .large-text {
+    color: #101820;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.projects-section {
+    background: #ffffff;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.project-card {
+    min-height: 300px;
+    padding: 25px;
+    border: 1px solid #d9dee3;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: 0.3s;
+    background: #f8f9fa;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: #1769ff;
+    box-shadow: 8px 8px 0 #1769ff;
+}
+
+.project-card.featured {
+    background: #101820;
+    color: white;
+    border-color: #101820;
+}
+
+.project-number {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    color: #1769ff;
+}
+
+.project-type {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #7b858e;
+}
+
+.featured .project-type {
+    color: #7caaff;
+}
+
+.project-content h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.project-content p {
+    color: #737d86;
+    font-size: 14px;
+    max-width: 420px;
+}
+
+.featured .project-content p {
+    color: #aab3bb;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 20px;
+}
+
+.project-tags span {
+    padding: 5px 9px;
+    border: 1px solid #cfd5da;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.featured .project-tags span {
+    border-color: #394650;
+}
+
+.project-arrow {
+    position: absolute;
+    right: 24px;
+    top: 22px;
+    font-size: 22px;
+    color: #1769ff;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.skill-box {
+    padding: 28px;
+    min-height: 190px;
+    background: #ffffff;
+    border: 1px solid #d9dee3;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    border-color: #1769ff;
+}
+
+.skill-box > span {
+    color: #1769ff;
+    font-size: 11px;
+}
+
+.skill-box h3 {
+    font-family: "Space Grotesk", sans-serif;
+    margin: 25px 0 8px;
+    font-size: 21px;
+}
+
+.skill-box p {
+    color: #737d86;
+    font-size: 13px;
+}
+
+.education-card {
+    display: grid;
+    grid-template-columns: 120px 1fr 130px;
+    align-items: center;
+    padding: 30px;
+    background: #101820;
+    color: white;
+    border-radius: 8px;
+}
+
+.education-year {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 21px;
+    color: #5f99ff;
+}
+
+.education-year span {
+    color: #89949e;
+    font-size: 13px;
+}
+
+.education-info span {
+    font-size: 10px;
+    color: #7b858e;
+    letter-spacing: 1.5px;
+}
+
+.education-info h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.education-info p {
+    color: #9ba5ad;
+    font-size: 13px;
+}
+
+.education-status {
+    justify-self: end;
+    padding: 7px 12px;
+    border: 1px solid #3c4852;
+    border-radius: 20px;
+    color: #aeb7be;
+    font-size: 11px;
+}
+
+.contact-section {
+    margin: 100px 7%;
+    padding: 65px;
+    background: #1769ff;
+    color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.contact-section h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(42px, 5vw, 65px);
+    line-height: 1;
+    margin: 18px 0;
+}
+
+.contact-section h2 em {
+    color: #101820;
+    font-style: normal;
+}
+
+.contact-section p {
+    max-width: 500px;
+    color: #dce8ff;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-links a {
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 70px 1fr 20px;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-links span {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c9dcff;
+}
+
+.contact-links strong {
+    transition: 0.3s;
+}
+
+.contact-links a:hover strong {
+    transform: translate(4px, -4px);
+}
+
+footer {
+    padding: 35px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #d9dee3;
+    color: #737d86;
+    font-size: 12px;
+}
+
+.footer-logo {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #101820;
+}
+
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 5%;
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .profile-card {
+        max-width: 600px;
+    }
+
+    .section {
+        padding: 80px 5%;
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .contact-section {
+        margin: 70px 5%;
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 30px 5%;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: auto;
+        padding: 20px 5%;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .github-button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        letter-spacing: -3px;
+    }
+
+    .quick-info {
+        gap: 25px;
+    }
+
+    .intro-strip {
+        overflow: hidden;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    .intro-strip span {
+        flex-shrink: 0;
+    }
+
+    .projects-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .education-status {
+        justify-self: start;
+    }
+
+    .contact-section {
+        padding: 40px 25px;
+    }
+
+    .contact-links a {
+        grid-template-columns: 55px 1fr 15px;
+        font-size: 13px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+```
