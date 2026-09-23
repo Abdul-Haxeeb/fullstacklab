@@ -1,0 +1,358 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudyForge student productivity dashboard by Abdul Haseeb.">
+    <title>StudyForge | Abdul Haseeb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="container nav">
+            <a href="#home" class="logo">
+                <span class="logo-box">S</span>
+                StudyForge
+            </a>
+
+            <nav>
+                <a href="#overview">Overview</a>
+                <a href="#subjects">Subjects</a>
+                <a href="#tasks">Tasks</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <a href="#tasks" class="nav-button">My Workspace</a>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-text">
+                    <span class="eyebrow">STUDENT WORKSPACE / 2026</span>
+
+                    <h1>
+                        Build better
+                        <span>study habits.</span>
+                    </h1>
+
+                    <p>
+                        A simple academic workspace for keeping track of
+                        subjects, assignments, study time and daily progress.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#overview" class="button primary">View Progress</a>
+                        <a href="#subjects" class="button secondary">Explore Subjects</a>
+                    </div>
+
+                    <div class="student-line">
+                        <span class="student-avatar">AH</span>
+                        <div>
+                            <strong>Abdul Haseeb</strong>
+                            <small>Computer Science Student</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="hero-card">
+                    <div class="card-top">
+                        <span>WEEKLY FOCUS</span>
+                        <b>THIS WEEK</b>
+                    </div>
+
+                    <div class="focus-number">24<span>hrs</span></div>
+
+                    <p>Study time completed</p>
+
+                    <div class="progress-line">
+                        <span></span>
+                    </div>
+
+                    <div class="progress-info">
+                        <small>Weekly target</small>
+                        <strong>30 hrs</strong>
+                    </div>
+
+                    <div class="mini-days">
+                        <div><span>MON</span><i style="height: 55%;"></i></div>
+                        <div><span>TUE</span><i style="height: 75%;"></i></div>
+                        <div><span>WED</span><i style="height: 40%;"></i></div>
+                        <div><span>THU</span><i style="height: 90%;"></i></div>
+                        <div><span>FRI</span><i style="height: 65%;"></i></div>
+                        <div><span>SAT</span><i style="height: 80%;"></i></div>
+                        <div><span>SUN</span><i style="height: 30%;"></i></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="overview" id="overview">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-number">01</span>
+                        <h2>Today's <span>overview.</span></h2>
+                    </div>
+
+                    <p>Monday, September 21</p>
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-icon">01</div>
+                        <span>Tasks completed</span>
+                        <strong>08</strong>
+                        <small>+2 from yesterday</small>
+                    </div>
+
+                    <div class="stat-card dark">
+                        <div class="stat-icon">02</div>
+                        <span>Study streak</span>
+                        <strong>12</strong>
+                        <small>days in a row</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">03</div>
+                        <span>Subjects active</span>
+                        <strong>05</strong>
+                        <small>this semester</small>
+                    </div>
+
+                    <div class="stat-card accent">
+                        <div class="stat-icon">04</div>
+                        <span>Next deadline</span>
+                        <strong>02</strong>
+                        <small>days remaining</small>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="subjects" id="subjects">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-number">02</span>
+                        <h2>Subjects in <span>motion.</span></h2>
+                    </div>
+
+                    <a href="#tasks" class="view-link">View all →</a>
+                </div>
+
+
+                <div class="subject-grid">
+
+                    <article class="subject-card large">
+                        <div class="subject-top">
+                            <span class="subject-tag">CS-204</span>
+                            <b>72%</b>
+                        </div>
+
+                        <h3>Data<br>Structures</h3>
+
+                        <p>
+                            Graphs, trees, hashing and algorithm analysis.
+                        </p>
+
+                        <div class="subject-progress">
+                            <span style="width: 72%;"></span>
+                        </div>
+
+                        <div class="subject-bottom">
+                            <small>12 / 17 topics</small>
+                            <strong>→</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="subject-card blue">
+                        <div class="subject-top">
+                            <span class="subject-tag">CS-301</span>
+                            <b>64%</b>
+                        </div>
+
+                        <h3>Operating<br>Systems</h3>
+
+                        <p>
+                            Processes, memory and scheduling.
+                        </p>
+
+                        <div class="subject-progress">
+                            <span style="width: 64%;"></span>
+                        </div>
+
+                        <div class="subject-bottom">
+                            <small>9 / 14 topics</small>
+                            <strong>→</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="subject-card orange">
+                        <div class="subject-top">
+                            <span class="subject-tag">CS-305</span>
+                            <b>81%</b>
+                        </div>
+
+                        <h3>Computer<br>Networks</h3>
+
+                        <p>
+                            Routing, protocols and network security.
+                        </p>
+
+                        <div class="subject-progress">
+                            <span style="width: 81%;"></span>
+                        </div>
+
+                        <div class="subject-bottom">
+                            <small>13 / 16 topics</small>
+                            <strong>→</strong>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="tasks" id="tasks">
+            <div class="container task-layout">
+
+                <div class="task-intro">
+                    <span class="section-number">03</span>
+                    <h2>Keep the<br><span>momentum.</span></h2>
+
+                    <p>
+                        Small completed tasks turn into bigger academic
+                        progress. Keep today's list simple and focused.
+                    </p>
+
+                    <div class="completion">
+                        <strong>76%</strong>
+                        <span>daily completion</span>
+                    </div>
+                </div>
+
+
+                <div class="task-list">
+
+                    <div class="task-item completed">
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>Review DSA lecture notes</strong>
+                            <small>Data Structures / 45 min</small>
+                        </div>
+                        <b>DONE</b>
+                    </div>
+
+                    <div class="task-item completed">
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>Practice OS questions</strong>
+                            <small>Operating Systems / 30 min</small>
+                        </div>
+                        <b>DONE</b>
+                    </div>
+
+                    <div class="task-item">
+                        <span class="check"></span>
+                        <div>
+                            <strong>Complete CN assignment</strong>
+                            <small>Computer Networks / 60 min</small>
+                        </div>
+                        <b>6:00 PM</b>
+                    </div>
+
+                    <div class="task-item">
+                        <span class="check"></span>
+                        <div>
+                            <strong>Prepare tomorrow's quiz</strong>
+                            <small>Operating Systems / 45 min</small>
+                        </div>
+                        <b>8:30 PM</b>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="quote-section">
+            <div class="container quote-box">
+                <span class="quote-symbol">“</span>
+                <h2>Consistency makes<br><span>progress visible.</span></h2>
+                <p>ONE SESSION AT A TIME.</p>
+            </div>
+        </section>
+
+
+        <section class="about" id="about">
+            <div class="container about-grid">
+
+                <div>
+                    <span class="section-number">04</span>
+                    <h2>Made for<br><span>real students.</span></h2>
+                </div>
+
+                <div>
+                    <p>
+                        StudyForge is a simple concept for students who want
+                        their academic work in one place without making
+                        productivity complicated.
+                    </p>
+
+                    <div class="about-details">
+                        <div>
+                            <strong>05</strong>
+                            <span>Subjects</span>
+                        </div>
+
+                        <div>
+                            <strong>12</strong>
+                            <span>Day streak</span>
+                        </div>
+
+                        <div>
+                            <strong>24h</strong>
+                            <span>This week</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container footer-content">
+            <span>STUDYFORGE / STUDENT WORKSPACE</span>
+            <span>© 2026 Abdul Haseeb</span>
+            <a href="#home">Back to top ↑</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
