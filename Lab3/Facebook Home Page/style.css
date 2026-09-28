@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #eef1f6;
+    color: #202124;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar */
+
+.navbar {
+    min-height: 58px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.search-input {
+    width: 210px;
+    border: none;
+    background-color: #eef1f6;
+    border-radius: 20px;
+}
+
+.search-input:focus {
+    box-shadow: none;
+    background-color: #eef1f6;
+}
+
+.nav-link {
+    padding: 8px 14px;
+    color: #606770;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #4267B2;
+}
+
+.nav-link.active {
+    color: #4267B2;
+    border-bottom: 3px solid #4267B2;
+}
+
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e7e9ed;
+    font-size: 16px;
+}
+
+.icon-btn:hover {
+    background-color: #d9dde3;
+}
+
+
+/* Main Area */
+
+.main-container {
+    padding-top: 18px;
+    padding-bottom: 30px;
+}
+
+
+/* Sidebars */
+
+.sidebar {
+    position: sticky;
+    top: 75px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar-item:hover,
+.contact-item:hover {
+    background-color: #dfe3e8;
+}
+
+
+/* Profile Images */
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #c9ccd1;
+}
+
+.profile-pic-small {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #c9ccd1;
+}
+
+
+/* Stories */
+
+.story-card {
+    position: relative;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.story-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.story-avatar {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #4267B2;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.story-name {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.create-story .story-bg {
+    height: 120px;
+    background-color: #d9dde3;
+}
+
+.create-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #4267B2;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.create-story .story-name {
+    color: #202124;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+
+/* Posts */
+
+.card {
+    border-radius: 9px;
+}
+
+.post-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.post-option,
+.action-btn {
+    color: #606770;
+    font-weight: bold;
+}
+
+.post-option:hover,
+.action-btn:hover {
+    background-color: #eef1f6;
+    color: #4267B2;
+}
+
+
+/* Right Sidebar */
+
+.right-sidebar {
+    position: sticky;
+    top: 75px;
+}
+
+.sponsored-img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.avatar-wrapper {
+    position: relative;
+}
+
+.online-status {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #42b72a;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+    .search-input {
+        width: 160px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .search-input {
+        width: 140px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .main-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .search-input {
+        width: 110px;
+    }
+
+    .icon-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+    }
+
+    .profile-pic {
+        width: 34px;
+        height: 34px;
+    }
+
+}
