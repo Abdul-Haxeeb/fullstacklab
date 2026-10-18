@@ -1,16 +1,17 @@
-
 function loadStudent(studentId, callback) {
     setTimeout(() => {
-        if (studentId !== 101) {
+        if (studentId !== 101 && studentId !== 102) {
             return callback(new Error('Student does not exist'));
         }
 
-        callback(null, {
+        const student = {
             id: studentId,
-            name: 'Ali',
-            completedCourses: ['CS301']
-        });
-    }, 300);
+            name: studentId === 101 ? 'Ali' : 'Sara',
+            completedCourses: studentId === 101 ? ['CS301'] : []
+        };
+
+        callback(null, student);
+    }, 100);
 }
 
 function checkPrerequisites(student, course, callback) {
@@ -20,7 +21,7 @@ function checkPrerequisites(student, course, callback) {
         }
 
         callback(null, { student, course });
-    }, 300);
+    }, 100);
 }
 
 function checkSeats(data, callback) {
@@ -30,7 +31,7 @@ function checkSeats(data, callback) {
         }
 
         callback(null, data);
-    }, 300);
+    }, 100);
 }
 
 function registerCourse(data, callback) {
@@ -44,31 +45,23 @@ function registerCourse(data, callback) {
             course: data.course,
             status: 'REGISTERED'
         });
-    }, 300);
+    }, 100);
 }
 
-function registerStudent(studentId, course) {
+function registerStudent(studentId, course, testName) {
     loadStudent(studentId, (error, student) => {
-        if (error) {
-            return console.log(error.message);
-        }
+        if (error) return console.log(`${testName}: ${error.message}`);
 
         checkPrerequisites(student, course, (error, data) => {
-            if (error) {
-                return console.log(error.message);
-            }
+            if (error) return console.log(`${testName}: ${error.message}`);
 
             checkSeats(data, (error, availableData) => {
-                if (error) {
-                    return console.log(error.message);
-                }
+                if (error) return console.log(`${testName}: ${error.message}`);
 
                 registerCourse(availableData, (error, confirmation) => {
-                    if (error) {
-                        return console.log(error.message);
-                    }
+                    if (error) return console.log(`${testName}: ${error.message}`);
 
-                    console.log('Registration successful');
+                    console.log(`${testName}: Registration successful`);
                     console.log(confirmation);
                 });
             });
@@ -76,4 +69,8 @@ function registerStudent(studentId, course) {
     });
 }
 
-registerStudent(101, 'CS401');
+registerStudent(101, 'CS401', 'Successful registration');
+registerStudent(999, 'CS401', 'Missing student');
+registerStudent(102, 'CS401', 'Missing prerequisite');
+registerStudent(101, 'FULL', 'Full course');
+registerStudent(101, 'CS301', 'Duplicate registration');
