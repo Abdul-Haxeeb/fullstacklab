@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Royal Silver Chain",
+    "category": "Chains & Hand Chains",
+    "price": 3499,
+    "description": "Classic silver-tone chain."
+  },
+  {
+    "id": 2,
+    "name": "Classic Hand Chain",
+    "category": "Chains & Hand Chains",
+    "price": 2799,
+    "description": "Simple hand chain design."
+  },
+  {
+    "id": 3,
+    "name": "Black Steel Chain",
+    "category": "Chains & Hand Chains",
+    "price": 3999,
+    "description": "Black steel chain."
+  },
+  {
+    "id": 4,
+    "name": "Classic Signet Ring",
+    "category": "Rings & Bracelets",
+    "price": 2499,
+    "description": "Classic signet ring."
+  },
+  {
+    "id": 5,
+    "name": "Urban Steel Bracelet",
+    "category": "Rings & Bracelets",
+    "price": 2999,
+    "description": "Steel bracelet for everyday wear."
+  },
+  {
+    "id": 6,
+    "name": "Royal Bead Bracelet",
+    "category": "Rings & Bracelets",
+    "price": 1999,
+    "description": "Bead bracelet."
+  },
+  {
+    "id": 7,
+    "name": "Beard Care Kit",
+    "category": "Men's Grooming",
+    "price": 2299,
+    "description": "Everyday beard care kit."
+  },
+  {
+    "id": 8,
+    "name": "Daily Grooming Set",
+    "category": "Men's Grooming",
+    "price": 2799,
+    "description": "Daily grooming essentials."
+  },
+  {
+    "id": 9,
+    "name": "Nafees Signature",
+    "category": "Men's Grooming",
+    "price": 3499,
+    "description": "Bait-ul-Nafees signature product."
+  }
+]

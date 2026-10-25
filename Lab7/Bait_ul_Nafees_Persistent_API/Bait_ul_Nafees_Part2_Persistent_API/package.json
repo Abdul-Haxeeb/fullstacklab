@@ -1,0 +1,10 @@
+{
+  "name": "bait-ul-nafees-persistent-api",
+  "version": "1.0.0",
+  "description": "Persistent REST API for Bait-ul-Nafees e-commerce store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  }
+}
